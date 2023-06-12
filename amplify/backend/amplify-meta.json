@@ -1,0 +1,63 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyafa982e4ff814-staging-13533-authRole",
+      "UnauthRoleArn": "arn:aws:iam::097492074380:role/amplify-amplifyafa982e4ff814-staging-13533-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::097492074380:role/amplify-amplifyafa982e4ff814-staging-13533-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-amplifyafa982e4ff814-staging-13533-deployment",
+      "UnauthRoleName": "amplify-amplifyafa982e4ff814-staging-13533-unauthRole",
+      "StackName": "amplify-amplifyafa982e4ff814-staging-13533",
+      "StackId": "arn:aws:cloudformation:us-west-2:097492074380:stack/amplify-amplifyafa982e4ff814-staging-13533/6c7c4d60-08c1-11ee-baef-0af6f432028f",
+      "AmplifyAppId": "d2ci739cphup6u"
+    }
+  },
+  "auth": {
+    "tradingapp": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL",
+          "NAME"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyafa982e4ff814-staging-13533-deployment/amplify-cfn-templates/auth/tradingapp-cloudformation-template.json",
+        "logicalId": "authtradingapp"
+      },
+      "lastPushTimeStamp": "2023-06-12T09:03:58.427Z",
+      "output": {
+        "UserPoolId": "us-west-2_4JWKxCr7N",
+        "AppClientIDWeb": "72s475kkqkbqvdn4jvtfhjurck",
+        "AppClientID": "47fdvhphsitul2ps6crid42abn",
+        "IdentityPoolId": "us-west-2:ade52397-a251-43b0-a388-a0cef8e06d13",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-2:097492074380:userpool/us-west-2_4JWKxCr7N",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "tradingapp"
+      },
+      "lastPushDirHash": "MffL1rQfOvayntJuhaDrGiuRkF0="
+    }
+  }
+}
