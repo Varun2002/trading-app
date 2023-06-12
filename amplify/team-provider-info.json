@@ -1,5 +1,5 @@
 {
-  "providers": {
+  "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-tradingapp-dev-42606-authRole",
       "UnauthRoleArn": "arn:aws:iam::097492074380:role/amplify-tradingapp-dev-42606-unauthRole",
@@ -10,6 +10,11 @@
       "StackName": "amplify-tradingapp-dev-42606",
       "StackId": "arn:aws:cloudformation:us-west-2:097492074380:stack/amplify-tradingapp-dev-42606/2bf01410-0903-11ee-9a89-0ad3c0fe6a49",
       "AmplifyAppId": "dm48ivw3amqto"
+    },
+    "categories": {
+      "function": {
+        "helloWorld": {}
+      }
     }
   }
 }
